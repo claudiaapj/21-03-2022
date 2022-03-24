@@ -1,13 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./assets/js/script.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/stilo.css">
+    <script src="./assets/js/cadastro.js"></script>
+    <title>Cadastro </title>
 </head>
 <body>
+    <main>
+        <form >
+            <fieldset>
+                <legend>Formulário de cadastro</legend>
+                <p><label>Nome</label>
+                    <input type="text" name="" id="box-nome">
+                </p>
+                <p><label>Idade</label>
+                    <input type="text" name="" id="box-idade">
+                </p>
+                <p>
+                    <label > Sexo:</label>
+                    <select id="box-sexo">
+                    <option value="Masculino">Masculino</option>
+                    <option value="Feminino">Feminino</option>
+                    <option value="Sem declarar">Sem declarar</option>
+                </p>
+                </select>
+                </p>
+                <p>
+                     <button  
+                     onclick="cadastro()">  Salvar </button>
+
+                </p>
+
+            </fieldset>
+        </form>
+    </main>
     
 </body>
 </html>
