@@ -1,6 +1,14 @@
-const cadastro = function () {
+let array = []
+function cadastro() {
     let nome = document.querySelector('#box-nome').value
-    let idade = document.querySelector('#box-idade').value
+    let sIdade = document.querySelector('#box-idade').value
+    let idade = parseInt(sIdade)
     let sexo = document.querySelector('#box-sexo').value
-    console.log(nome, ' - ', idade, ' - ', sexo)
+    let pessoa = {
+        nome,
+        idade, 
+        sexo
+    }
+    array.push(pessoa)
+    console.log(array)
 }
